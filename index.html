@@ -7,28 +7,34 @@
     <title>Sign Up</title>
 </head>
 <body>
-    <div class="container">
-        <div class="left-container">
-            <h1>My Store</h1>
-            <img src="#" alt="Pic">
-            <p>Sign up to our newsletter to stay tuned.</p>
-        </div>
-        <div class="right-container">
-            <form action="" method="post">
-                <label for="first-name">First Name</label>
-                <input type="text" name="first-name" id="first-name" placeholder="Your First Name">
-                <label for="last-name">Last Name</label>
-                <input type="text" name="last-name" id="last-name" placeholder="Your First Name">
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email">
-                <label for="date-of-birth">Date of Birth</label>
-                <input type="date" name="date-of-birth" id="date-of-birth">
+    <div class="left-container">
 
-            </form>
-
-        </div>
     </div>
-    
+    <form action="#" method="post" class="form">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <div class="input-container">
+                <span>First Name</span>
+                <input type="text">
+            </div>
+            <div class="input-container">
+                <span class="active-span">Last Name</span>
+                <input type="text">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Contact Information</legend>
+            <div class="input-container">
+                <span>Email</span>
+                <input type="text">
+            </div>
+            <div class="input-container">
+                <span class="active-span">Phone Number</span>
+                <input type="text">
+            </div>
+        </fieldset>
+
+    </form>
     <script src="script.js"></script>
 </body>
 </html>
