@@ -12,25 +12,36 @@
     </div>
     <form action="#" method="post" class="form">
         <fieldset>
-            <legend>Personal Information</legend>
+            <legend>Personal Info</legend>
             <div class="input-container">
-                <span>First Name</span>
-                <input type="text">
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name">
             </div>
             <div class="input-container">
-                <span class="active-span">Last Name</span>
-                <input type="text">
+                <label for="first-name" class="active-span">Last Name</label>
+                <input type="text" id="last-name">
             </div>
         </fieldset>
         <fieldset>
-            <legend>Contact Information</legend>
+            <legend>Contact Info</legend>
             <div class="input-container">
-                <span>Email</span>
-                <input type="text">
+                <label for="email">Email</label>
+                <input type="text" id="email">
             </div>
             <div class="input-container">
-                <span class="active-span">Phone Number</span>
-                <input type="text">
+                <label class="active-span" for="phone-number">Phone Number</label>
+                <input type="text" id="phone-number">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Login Info</legend>
+            <div class="input-container">
+                <label for="pass">Password</label>
+                <input type="password" id="pass">
+            </div>
+            <div class="input-container">
+                <label for="confirm-pass">Confirm Password</label>
+                <input type="password" id="confirm-pass">
             </div>
         </fieldset>
 
