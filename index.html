@@ -4,48 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Sign Up</title>
+    <title>Sign Up Form</title>
 </head>
 <body>
+    
     <div class="left-container">
 
     </div>
-    <form action="#" method="post" class="form">
-        <fieldset>
-            <legend>Personal Info</legend>
-            <div class="input-container">
-                <label for="first-name">First Name</label>
-                <input type="text" id="first-name">
-            </div>
-            <div class="input-container">
-                <label for="first-name" class="active-span">Last Name</label>
-                <input type="text" id="last-name">
-            </div>
-        </fieldset>
-        <fieldset>
-            <legend>Contact Info</legend>
-            <div class="input-container">
-                <label for="email">Email</label>
-                <input type="text" id="email">
-            </div>
-            <div class="input-container">
-                <label class="active-span" for="phone-number">Phone Number</label>
-                <input type="text" id="phone-number">
-            </div>
-        </fieldset>
-        <fieldset>
-            <legend>Login Info</legend>
-            <div class="input-container">
-                <label for="pass">Password</label>
-                <input type="password" id="pass">
-            </div>
-            <div class="input-container">
-                <label for="confirm-pass">Confirm Password</label>
-                <input type="password" id="confirm-pass">
-            </div>
-        </fieldset>
 
-    </form>
+    <div class="right-container">
+
+        <form class="form" action="post">
+            <fieldset>
+                <legend>Personal Info</legend>
+                <div class="input-container first-name">
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name">
+                    <p></p>
+                </div>
+                <div class="input-container last-name">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name">
+                    <p></p>
+                </div>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Contact Info</legend>
+                <div class="input-container email">
+                    <label for="email">Email</label>
+                    <input type="email" id="email">
+                    <p></p>
+                </div>
+                <div class="input-container ph-number">
+                    <label for="ph-number">Phone Number</label>
+                    <input type="text" id="ph-number">
+                    <p></p>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Sign up</legend>
+                <div class="input-container password">
+                    <label for="password">Password</label>
+                    <input type="password" id="password">
+                    <p></p>
+                </div>
+                <div class="input-container confirm-password">
+                    <label for="confirm-password">Password</label>
+                    <input type="password" id="confirm-password">
+                    <p></p>
+                </div>
+            </fieldset>
+
+
+        </form>
+
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
