@@ -55,10 +55,13 @@ form > fieldset {
     margin: 10px;
     font-size: 1.3rem;
     border-radius: 15px;
-    height: 75px;
+    height: 80px;
 }
+
 p{
-    color: red;
+    position: absolute;
+    top: 5px;
+    color: brown;
     font-weight: bold;
 }
 
@@ -108,14 +111,40 @@ input[type="text"], input[type="password"], input[type="number"], input[type="em
 }
 
 
-@media (max-width: 767px) {
-    body{
+@media only screen and (max-width: 767px) {
+    body {
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
-    .right-container {
-        width: 100vw;
-    }
+
     .left-container {
+        padding: 0;
+        height:100vh;
+        width:100%;
+    }
+
+    .right-container {
+        padding: 0;
+        height: 100vh;
         width: 100vw;
     }
+
+    .form {
+        padding: 0;
+        height: 100%;
+        width: 100%;
+        border: 0;
+    }
+
+    form > fieldset {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 80%;
+        height: 200px;
+        min-width: none;
+    }
+    
 }
